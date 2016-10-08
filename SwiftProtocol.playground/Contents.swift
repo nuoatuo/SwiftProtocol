@@ -7,7 +7,7 @@ import UIKit
     2>如何遵守协议
     3>协议在代理设计模式中如何使用
     4>协议中方法的可选性
-            protocol前面加上@obj
+            protocol前面加上@objc
             方法前面加上@objc optional
  */
 
@@ -57,7 +57,7 @@ class Person {
 }
 
 //4、如何让协议中的方法是可选方法
-//optional属于OC特性，如果协议中有可选的方法，那么必须在protocol和optional前面都加上@obj
+//optional属于OC特性，如果协议中有可选的方法，那么必须在protocol和optional前面都加上@objc
 @objc protocol TestProtocol: class {
     @objc optional func test()
 }
